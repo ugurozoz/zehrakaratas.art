@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Expressions</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        perspective: 100vw;
+        background: #000;
+      }
+      .container {
+        position: relative;
+
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0);
+        transform-style: preserve-3d;
+
+        /* transform: rotate3d(1, 0, 1, 30deg); */
+        transition: all 0.7s ease-in-out;
+        /* background: url('i/grid.png') ;
+        background-size:auto 10%;
+        border:1px solid #f00;*/
+        transform: translateZ(30vw) rotate3d(0, 0, 0, 90deg);
+
+      }
+
+      .container:hover {
+        transform: translateZ(30vw) rotate3d(0, 1, 0, 90deg);
+        /* background-size: auto 100%; */
+
+      }
+      /*Vertical Middle Guide*/
+      .container:before {
+        content: "";
+        position: absolute;
+        top: 0px;
+        left: calc(50% - 1px);
+        width: 1px;
+        height: 100%;
+
+        /* border-left: 1px solid #000; */
+      }
+
+      /*Horizontal Middle Guide*/
+      .container:after {
+        content: "";
+        position: absolute;
+        left: 0px;
+        top: calc(50% - 1px);
+        height: 1px;
+        width: 100%;
+        /* border-bottom: 1px solid #000; */
+      }
+
+      .wall {
+        position: absolute;
+        width: calc(100% - 0px);
+        height: calc(100% - 0px);
+        z-index: 20;        
+        backface-visibility: hidden;
+        background: #111;
+      }
+
+      .wall__1 {
+        transform: translate3d(0, 0, -50vw) rotateY(0deg);
+        
+       
+      }
+
+      .wall__2 {
+        transform: translate3d(50%, 0, 0) rotateY(-90deg);
+        
+        
+      }
+
+      .wall__3 {
+        transform: translate3d(0, 0, 50vw) rotateY(180deg);
+        
+      
+        
+      }
+
+      .wall__4 {
+        transform: translate3d(-50%, 0, 0) rotateY(90deg);
+        /* background: #0f0; */
+        
+      }
+
+      .wall img {
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container" style="background-position: 0 0">
+      <div class="wall wall__1"><img src="i/1.png" /></div>
+      <div class="wall wall__2"></div>
+
+      <div class="wall wall__3"></div>
+      <div class="wall wall__4"></div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
