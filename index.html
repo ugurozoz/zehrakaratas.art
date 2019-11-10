@@ -12,6 +12,7 @@
         overflow: hidden;
         perspective: 100vw;
         background: #000;
+        position: relative;
       }
       .container {
         position: relative;
@@ -27,13 +28,11 @@
         background-size:auto 10%;
         border:1px solid #f00;*/
         transform: translateZ(30vw) rotate3d(0, 0, 0, 90deg);
-
       }
 
       .container:hover {
         transform: translateZ(30vw) rotate3d(0, 1, 0, 90deg);
         /* background-size: auto 100%; */
-
       }
       /*Vertical Middle Guide*/
       .container:before {
@@ -62,34 +61,26 @@
         position: absolute;
         width: calc(100% - 0px);
         height: calc(100% - 0px);
-        z-index: 20;        
+        z-index: 20;
         backface-visibility: hidden;
         background: #111;
       }
 
       .wall__1 {
         transform: translate3d(0, 0, -50vw) rotateY(0deg);
-        
-       
       }
 
       .wall__2 {
         transform: translate3d(50%, 0, 0) rotateY(-90deg);
-        
-        
       }
 
       .wall__3 {
         transform: translate3d(0, 0, 50vw) rotateY(180deg);
-        
-      
-        
       }
 
       .wall__4 {
         transform: translate3d(-50%, 0, 0) rotateY(90deg);
         /* background: #0f0; */
-        
       }
 
       .wall img {
@@ -105,6 +96,7 @@
       <div class="wall wall__3"></div>
       <div class="wall wall__4"></div>
     </div>
+    <div class="nfo"></div>
     <script src="app.js"></script>
   </body>
 </html>
