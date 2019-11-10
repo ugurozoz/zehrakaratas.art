@@ -7,7 +7,7 @@ const innerHeight = window.innerHeight;
 document.addEventListener("mousedown", function(e) {
   console.log(e);
 });
-let fifi = false;
+let fifi = true;
 document.addEventListener("mousemove", evt => {
   // Print coordinates to screen
   if (!fifi) {
@@ -35,16 +35,17 @@ function printVars(arr) {
   //console.log(container);
 }
 
-function Engine(container) {
-  this.container = container;
-}
+function Engine() {}
 
-Engine.prototype.rotateZ = function(deg) {
-  //console.log(this.container.style);
-  this.container.style = `transform:translateY(-800px) translateZ(-1800px) rotate3d(0, 1, 0, ${deg}deg)`;
+Engine.prototype.rotate3d = function(angleX, angleY, angleZ, container) {
+  console.log(container);
+  console.log("---");
+  container.style.transform = `translateZ(-1000px) rotateX(${angleX}deg) rotateY(${angleY}deg) rotateZ(${angleZ}deg)`;
 };
+console.log(container);
+const z_engine = new Engine(container);
 
-//const z_engine = new Engine(container);
+z_engine.rotate3d(10, 20, 40, container);
 
 //z_engine.rotateZ(0);
 
