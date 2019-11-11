@@ -42,10 +42,20 @@ Engine.prototype.rotate3d = function(angleX, angleY, angleZ, container) {
   console.log("---");
   container.style.transform = `translateZ(-1000px) rotateX(${angleX}deg) rotateY(${angleY}deg) rotateZ(${angleZ}deg)`;
 };
+
+Engine.prototype.move3d = function(X, Y, Z, container) {
+  console.log(container.style.transform);
+  //console.log("---");
+  //container.style.transform = `translateZ(-1000px) rotateX(${angleX}deg) rotateY(${angleY}deg) rotateZ(${angleZ}deg)`;
+};
+
+
+
 console.log(container);
 const z_engine = new Engine(container);
 
-z_engine.rotate3d(10, 20, 40, container);
+z_engine.rotate3d(0, 0, 40, container);
+z_engine.move3d(0, 0, 40, container)
 
 //z_engine.rotateZ(0);
 
