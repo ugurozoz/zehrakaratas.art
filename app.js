@@ -2,6 +2,7 @@ const container = document.querySelector(".container");
 const info = document.querySelector(".nfo p");
 const innerHeight = window.innerHeight;
 
+
 //container.style.transform = `translateY(-800px) translateZ(-1800px)`;
 
 document.addEventListener("mousedown", function(e) {
@@ -38,9 +39,10 @@ function printVars(arr) {
 function Engine() {}
 
 Engine.prototype.rotate3d = function(angleX, angleY, angleZ, container) {
-  console.log(container);
+  
   console.log("---");
   container.style.transform = `translateZ(-1000px) rotateX(${angleX}deg) rotateY(${angleY}deg) rotateZ(${angleZ}deg)`;
+  console.log(">>",container.style.transform);
 };
 
 Engine.prototype.move3d = function(X, Y, Z, container) {
@@ -55,7 +57,7 @@ console.log(container);
 const z_engine = new Engine(container);
 
 z_engine.rotate3d(0, 0, 40, container);
-z_engine.move3d(0, 0, 40, container)
+z_engine.move3d(0,11120, 40, container)
 
 //z_engine.rotateZ(0);
 
