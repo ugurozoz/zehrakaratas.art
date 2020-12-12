@@ -2,13 +2,12 @@ const container = document.querySelector(".container");
 const info = document.querySelector(".nfo p");
 const innerHeight = window.innerHeight;
 
-
 //container.style.transform = `translateY(-800px) translateZ(-1800px)`;
 
 document.addEventListener("mousedown", function(e) {
   console.log(e);
 });
-let fifi = true;
+let fifi = false;
 document.addEventListener("mousemove", evt => {
   // Print coordinates to screen
   if (!fifi) {
@@ -28,9 +27,7 @@ function printVars(arr) {
   const normalizeX = -(arr[1] / innerHeight) * angle;
   const normalizeY = (arr[0] / innerWidth) * angle;
 
-  info.textContent = `< X : ${arr[0]} >    < Y : ${
-    arr[1]
-  } > < Angle : ${normalizeX} >  < innerHeight : ${innerHeight} >`;
+  info.textContent = `< X : ${arr[0]} >    < Y : ${arr[1]} > < Angle : ${normalizeX} >  < innerHeight : ${innerHeight} >`;
   //container.style.transform = `translateY(-800px) translateZ(-1800px) rotateX(${normalize}deg)`;
   container.style.transform = `translateZ(-2000px) rotateX(${normalizeX}deg) rotateY(${normalizeY}deg) `;
   //console.log(container);
@@ -39,10 +36,9 @@ function printVars(arr) {
 function Engine() {}
 
 Engine.prototype.rotate3d = function(angleX, angleY, angleZ, container) {
-  
-  console.log("---");
+  console.log("---", container.style.transfor);
   container.style.transform = `translateZ(-1000px) rotateX(${angleX}deg) rotateY(${angleY}deg) rotateZ(${angleZ}deg)`;
-  console.log(">>",container.style.transform);
+  console.log(">>", container.style.transform);
 };
 
 Engine.prototype.move3d = function(X, Y, Z, container) {
@@ -51,13 +47,11 @@ Engine.prototype.move3d = function(X, Y, Z, container) {
   //container.style.transform = `translateZ(-1000px) rotateX(${angleX}deg) rotateY(${angleY}deg) rotateZ(${angleZ}deg)`;
 };
 
-
-
 console.log(container);
 const z_engine = new Engine(container);
 
-z_engine.rotate3d(0, 0, 40, container);
-z_engine.move3d(0,11120, 40, container)
+//z_engine.rotate3d(90, 0, 0, container);
+// z_engine.move3d(0, 0, 40, container);
 
 //z_engine.rotateZ(0);
 
