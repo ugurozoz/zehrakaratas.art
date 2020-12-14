@@ -1,21 +1,37 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import { Switch, Route, withRouter, Redirect } from 'react-router-dom';
+import Layout from './hoc/Layout/Layout';
+import Aux from './hoc/Auxiliary/Auxiliary';
+
+import Contact from './Containers/Contact/Contact';
+import Home from './Containers/Home/Home';
+import Sketch from './Containers/Sketch/Sketch';
+import Thesis from './Containers/Thesis/Thesis';
+import Cv from './Containers/CV/Cv';
+
 import './App.css';
 
 class App extends Component {
   render() {
+    const routes = (
+      <Switch>
+        <Route path='/contact' component={Contact} />        
+        <Route path='/sketch' component={Sketch} />
+        <Route path='/thesis' component={Thesis} />
+        <Route path='/cv' component={Cv} />
+        <Route path='/' exact component={Home} />
+        <Redirect to='/' />
+      </Switch>
+    );
+
+    // console.log(routes);
+
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
+      <Aux>
+        <Layout>{routes}</Layout>
+      </Aux>
     );
   }
 }
 
-export default App;
+export default withRouter(App);
