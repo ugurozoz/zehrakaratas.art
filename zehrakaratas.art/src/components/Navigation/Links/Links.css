@@ -20,7 +20,7 @@ nav {
   top:100vh;
   left: 0;  
   transition: all .3s ease-out;
-  background-color: #222222;
+  background-color: rgba(0, 0, 0, 0.9);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -43,9 +43,12 @@ nav {
 .Menu-Button span {
   display: block;
   width:24px;
-  border-top: 3px solid;
+  height: 3px;
   margin:23px 13px;
   position: relative;
+  transition: all 0.3s ease-out;
+  background-color:rgba(255,255,255,1);
+  
 
 }
 
@@ -53,19 +56,31 @@ nav {
   content: "";
   display: block;
   width:24px;
-  border-top: 3px solid;
+  border-top: 3px solid #fff;
   position: absolute;
-
+  transition: all 0.2s ease-out;
   
 }
 
-.Menu-Button span:after{top:5px;left: 0px;}
+.Menu-Button span:after{top:8px;left: 0px;}
 .Menu-Button span:before{bottom:8px;left: 0px;}
 
 
-.menu-button:checked ~ .Menu {
-  
-  top:0;
-  
-    
+.menu-button:checked ~ .Menu {  
+  top:0; 
+}
+
+.menu-button:checked ~ .Menu-Button span {
+  background-color:rgba(255,255,255,0);
+}
+
+
+.menu-button:checked ~ .Menu-Button span:after {
+  transform-origin: center;
+  transform: translateY(-8px) rotateZ(45deg);
+}
+
+.menu-button:checked ~ .Menu-Button span:before {
+  transform-origin: center;
+  transform: translateY(8px) rotateZ(-45deg);
 }

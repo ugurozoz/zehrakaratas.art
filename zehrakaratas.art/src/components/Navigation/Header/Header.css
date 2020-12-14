@@ -12,7 +12,18 @@ header {
   header {
     height: 100px;
   }
+  .Name-Title{
+    width:calc(100% - 60px);
+    margin: auto;
+    max-width: 900px;
+  }
+
+  .Name-Title .Name {
+    text-align: left;
+  }
 }
+
+
 
 .Name {
   color: #f0f0f0;

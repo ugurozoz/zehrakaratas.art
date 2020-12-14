@@ -8,10 +8,11 @@ const navigationLinks = (props) => {
 
   return (
     <div className='NavMenu'>
+      <input type='checkbox' id='menuButton' className='menu-button'></input>
       <label className='Menu-Button' htmlFor='menuButton'>
         <span></span>
       </label>
-      <input type='checkbox' id='menuButton' className='menu-button'></input>
+
       <div className='Menu'>
         <nav>
           <ul>
