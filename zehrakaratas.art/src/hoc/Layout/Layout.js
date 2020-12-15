@@ -9,7 +9,8 @@ class Layout extends Component {
 
   render() {
     return (
-      <Aux>        
+      <Aux>
+        <Header />
         <main>{this.props.children}</main>
         <Footer />
       </Aux>

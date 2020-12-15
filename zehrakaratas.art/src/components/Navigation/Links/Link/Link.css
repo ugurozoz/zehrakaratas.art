@@ -3,12 +3,30 @@
   display: block;
 }
 
+@media only screen and (min-width: 1024px) {
+  .NavLink {
+    font-size: 28px;
+    display: inline-block;
+    line-height: 28px;
+  }
+
+}
+
 .NavLink a {
   padding: 15px 20px;
   display: block;
   text-align: center;
+  color: #c0c0c0;
 }
 
 .NavLink:not(:last-child) a {
   border-bottom: 1px solid #333;
 }
+
+@media only screen and (min-width: 1024px) {
+  .NavLink:not(:last-child) a{
+    border-bottom: none;
+
+  }
+}
+

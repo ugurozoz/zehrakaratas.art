@@ -3,10 +3,14 @@ import Header from '../../components/Navigation/Header/header';
 import Aux from '../../hoc/Auxiliary/Auxiliary';
 
 class Thesis extends Component {
+  componentDidMount() {
+    this.setState({ mounted: true });
+
+    document.querySelector('#menuButton').checked = false;
+  }
   render() {
     return (
       <Aux>
-        <Header />
         <div>Thesis</div>
       </Aux>
     );

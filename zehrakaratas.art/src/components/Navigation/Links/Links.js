@@ -16,7 +16,7 @@ const navigationLinks = (props) => {
       <div className='Menu'>
         <nav>
           <ul>
-            <NavigationLink exact link='/home'>
+            <NavigationLink exact link='/'>
               Anasayfa
             </NavigationLink>
             <NavigationLink link='/cv'>CV</NavigationLink>
