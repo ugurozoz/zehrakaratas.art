@@ -8,35 +8,25 @@ header {
   flex-direction: column;
 }
 
-@media only screen and (min-width:728px) {
+.Headerin {
+  position: relative;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (min-width: 728px) {
   header {
     height: 100px;
   }
-  .Name-Title{
-    width:calc(100% - 60px);
+
+  .Headerin {
+    width: calc(100% - 60px);
     margin: auto;
-    max-width: 900px;
-  }
-
-  .Name-Title .Name {
-    text-align: left;
+    max-width: 900px;    
+    justify-content:flex-start;
   }
 }
 
-
-
-.Name {
-  color: #f0f0f0;
-  text-align: center;
-  
-  
-  display: block;
-  text-align: center;
-  font-size: 32px;
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-weight: 400;
-}
-
-.Title {
-  color: #f0f0f0;
-
-}

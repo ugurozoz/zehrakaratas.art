@@ -1,5 +1,7 @@
 import React from 'react';
 import Links from '../Links/Links';
+import NameTitle from './NameTitle/NameTitle';
+
 import './Header.css';
 
 const header = (props) => {
@@ -7,12 +9,10 @@ const header = (props) => {
 
   return (
     <header>
-      <div className="Name-Title">
-        <h1 className='Name'>Zehra Karataş</h1>
-        <p className='Title'>Seramik & Heykel Sanatçısı</p>
+      <div className='Headerin'>
+        <NameTitle />
+        <Links />
       </div>
-
-      <Links></Links>
     </header>
   );
 };

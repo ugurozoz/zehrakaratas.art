@@ -1,0 +1,35 @@
+.Name-Title {
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+}
+
+
+.Name {
+  color: #f0f0f0;
+  text-align: center;
+
+  display: block;
+  text-align: center;
+  font-size: 32px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+  font-weight: 400;
+  line-height: 1em;
+}
+
+.Title {
+  color: #f0f0f0;
+}
+
+
+@media only screen and (min-width:728px) {
+  
+
+  .Name-Title .Name {
+    text-align: left;
+  }
+
+}
+
+
