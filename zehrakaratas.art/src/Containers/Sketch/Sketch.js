@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
-import Header from '../../components/Navigation/Header/header';
+
+import SketchContent from './SketchContent/SketchContent';
+
 import Aux from '../../hoc/Auxiliary/Auxiliary';
 
 class Sketch extends Component {
-
   componentDidMount() {
     this.setState({ mounted: true });
 
@@ -13,8 +14,11 @@ class Sketch extends Component {
   render() {
     return (
       <Aux>
-        
-        <div>Sketch</div>
+        <SketchContent />
+
+        {/* <WithTransition>
+        <HomeContent />
+      </WithTransition> */}
       </Aux>
     );
   }
