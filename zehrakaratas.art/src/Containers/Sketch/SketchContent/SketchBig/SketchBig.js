@@ -4,9 +4,10 @@ import './SketchBig.css';
 const sketchBig = (props) => {
   const imagePath = require(`../../../../Assets/Images/sketch/${props.image}`);
 
+  console.log('SKETCHBIG RENDERED');
   return (
     <div className='Image-Big'>
-      <img src={imagePath} />
+      <img src={imagePath} alt="" />
     </div>
   );
 };

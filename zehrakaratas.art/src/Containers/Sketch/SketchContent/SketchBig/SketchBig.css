@@ -1,3 +1,17 @@
+.Image-Big {
+  text-align: center;
+}
+
+.Image-Big img {
+  width: 100%;
+}
+
+@media only screen and (min-width: 500px) {
+  .Image-Big img {
+    width: 470px;
+  }
+}
+
 @media only screen and (min-width: 1024px) {
   .Image-Big {
     float: left;

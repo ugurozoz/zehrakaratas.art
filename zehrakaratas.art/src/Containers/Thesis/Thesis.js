@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import Header from '../../components/Navigation/Header/header';
 import Aux from '../../hoc/Auxiliary/Auxiliary';
-
+import ThesisContent from './ThesisContent/ThesisContent'
 class Thesis extends Component {
   componentDidMount() {
     this.setState({ mounted: true });
@@ -11,7 +10,7 @@ class Thesis extends Component {
   render() {
     return (
       <Aux>
-        <div>Thesis</div>
+        <ThesisContent />
       </Aux>
     );
   }

@@ -3,7 +3,7 @@ import './CvContent.css';
 
 const cvContent = (props) => {
   return (
-    <div className='container'>
+    <div className='container cv-container'>
       <div className='st-con edu-div'>
         <strong className='gen-head'>Eğitim</strong>
         <div className='edu-div-row'>

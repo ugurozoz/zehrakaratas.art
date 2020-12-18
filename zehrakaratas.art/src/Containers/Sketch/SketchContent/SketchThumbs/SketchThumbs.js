@@ -1,15 +1,18 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './SketchThumbs.css';
 
 const sketchThumbs = (props) => {
+  console.log('RENDER THUMBS')
+
+  
   return (
     <div className='Image-Thumbs'>
       <ul>
         {props.imageList.map((image,index) => {
           const imagePath = require(`../../../../Assets/Images/sketch/thumbs/${image}`);
           return (
-            <li onClick={() => props.showSketch(index)}>
-              <img src={imagePath} />
+            <li key={`thumb${index}`} onClick={() => props.showSketch(index)} className={props.currentIndex === index ? 'thumb-active':null}>
+              <img src={imagePath} alt="" />
             </li>
           );
         })}
