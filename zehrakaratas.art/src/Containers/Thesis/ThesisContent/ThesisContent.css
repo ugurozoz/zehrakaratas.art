@@ -1,3 +1,7 @@
 .thesis-container {
   font-weight: 300;
 }
+
+.thesis-container__inner {
+  display: flex;
+}
