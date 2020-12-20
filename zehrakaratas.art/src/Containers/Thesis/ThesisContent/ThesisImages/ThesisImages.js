@@ -1,4 +1,7 @@
-import React from 'react';
+import React, { Component } from 'react';
+import ThesisImage from './ThesisImage';
+
+import './ThesisImages.css'
 
 const imageList = [
   '1-1.jpg',
@@ -12,10 +15,15 @@ const imageList = [
   '6-1.jpg',
 ];
 
-
-
 const thesisImages = (props) => {
-  return <div style={{ background: '#ff0' }}>XX</div>;
+  const images = imageList.map((image) => {
+    const thesisImage = require(`../../../../Assets/Images/thesis/${image}`);
+    return <ThesisImage imageUrl={thesisImage}  />;
+  });
+
+  
+
+  return <div className='thesis-image-slider__content' style={{width: `calc( 100% * ${imageList.length})`}}>{images}</div>;
 };
 
 export default thesisImages;

@@ -4,4 +4,34 @@
 
 .thesis-container__inner {
   display: flex;
+  flex-direction: column-reverse;
+}
+
+@media only screen and (min-width: 1024px) {
+  .thesis-container__inner {
+    
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+
+.thesis-image-slider, .thesis-text {
+  width:100%;
+}
+
+.thesis-image-slider{
+  overflow: hidden;
+}
+
+@media only screen and (min-width: 1024px) {
+  .thesis-text {
+    width:calc( 60% - 10px );
+  }
+
+  .thesis-image-slider {
+    width:calc( 40% - 10px );
+  }
+
+
 }

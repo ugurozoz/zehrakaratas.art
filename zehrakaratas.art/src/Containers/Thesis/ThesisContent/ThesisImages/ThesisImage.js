@@ -1,28 +1,30 @@
 import React from 'react';
+import Spinner from '../../../../components/UI/Spinner/Spinner';
+
+import './ThesisImage.css';
 
 class ThesisImage extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { imageStatus: 'loading' };
-  }
+  state = { imageStatus: 'loading', loaded: false };
 
-  handleImageLoaded() {
-    this.setState({ imageStatus: 'loaded' });
-  }
+  handleImageLoaded = () => {
+    console.log('IMAGE LOADED');
+    this.setState({ imageStatus: 'loaded', loaded: true });
+  };
 
-  handleImageErrored() {
+  handleImageErrored = () => {
     this.setState({ imageStatus: 'failed to load' });
-  }
+  };
 
   render() {
     return (
-      <div>
+      <div className='thesis-image'>
+        {!this.state.loaded ? <Spinner /> : null}
         <img
           src={this.props.imageUrl}
-          onLoad={this.handleImageLoaded.bind(this)}
-          onError={this.handleImageErrored.bind(this)}
+          onLoad={this.handleImageLoaded}
+          onError={this.handleImageErrored}
         />
-        {this.state.imageStatus}
+        
       </div>
     );
   }

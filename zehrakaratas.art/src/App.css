@@ -43,3 +43,12 @@
   
   transition: all 300ms;
 }
+
+.content-container{
+  position: fixed;
+  top:0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  overflow-y: scroll;
+}

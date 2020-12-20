@@ -62,7 +62,7 @@ const thesisContent = (props) => {
             genetiğimize işleyerek büyür.
           </p>
         </div>
-        <div className='thesis-image'>
+        <div className='thesis-image-slider'>
           <ThesisImages />
         </div>
       </div>

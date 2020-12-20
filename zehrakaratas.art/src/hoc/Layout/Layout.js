@@ -11,7 +11,12 @@ class Layout extends Component {
     return (
       <Aux>
         <Header />
-        <main>{this.props.children}</main>
+        <main>
+          <div className="content-container">
+          {this.props.children}
+            
+          </div>
+          </main>
         <Footer />
       </Aux>
     );

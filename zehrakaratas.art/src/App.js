@@ -7,7 +7,7 @@ import { CSSTransition } from 'react-transition-group';
 
 import Contact from './Containers/Contact/Contact';
 import Home from './Containers/Home/Home';
-import Sketch from './Containers/Sketch/Sketch';
+import Sketch from './Containers/Sketches/Sketch';
 import Thesis from './Containers/Thesis/Thesis';
 import Cv from './Containers/CV/Cv';
 
