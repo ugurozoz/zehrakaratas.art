@@ -9,57 +9,33 @@ const thesisContent = (props) => {
       <div className='thesis-container__inner'>
         <div className='thesis-text'>
           <p>
-            Fotoğraf makinasının bulunması sanatın katı kurallarından
-            kurtulmasına izin verecek bir ortam yaratmıştır. Ekpresyonizm bu
-            görüntüler tarihinde yeni bir dönüm noktası olmuştur. .
+            Yüzlerin altında yatan travmaları görmeye çalışıyorum.
+            İfadelerimizin bir anla diğer bir ana geçerken ki kazanım ve
+            kaybedişlerini. Ve bu anlar arasında ki kayboluşları ceplerimde
+            saklamak istiyorum.
           </p>
           <p>
-            Ekpresyonizimle yeni bir insanın doğuşu veriliyordu. Kendini
-            anlatacak bir yol buluyordu. Savaşların insanlar üzerinde yarattığı
-            gerilim 20. yy ın yoğun geçen temposunda güven ve güvensizliği
-            anlatmanın bir yoluydu.
+            Mermerden bir kaide değildir hayatlarımız, izsiz sürüp giden,
+            sanatçı da yaşadığı çağdan bağımsız değildir.
           </p>
           <p>
-            Kapitalizmin, insan doğasını parçaladığını ve teknolojik düzeniyle
-            giderek yayılan psişik bir sağlıksızlık barındırıyordu.
+            Savaşlar, soykırımlar ve korkularımız ne varsa bu korku
+            imparatorluklarında yaşatılan, üzerimize siner...
           </p>
           <p>
-            Dışarıdan görünen güzel yüzlerimizin altında yatan travmaları
-            yansıtan yüzler yapmak istiyorum.
+            Huzurlu bir gökyüzü altında uzanamazsınız , varsayalım ki
+            uzanıyormuş gibi yaptınız...
           </p>
           <p>
-            Önemli olan mermer gibi pürüzsüz yüzler yapmak değil; bir duygu
-            durumunu ifade etmektir. İfadesiz bir anla diğer bir an arasında
-            giderken, yüzünün atomlarının aldığı hal, tarif edilmez yaratımlar
-            sunar sanatçıya.
-          </p>
-
-          <p>
-            Hayat mermer kaideler gibi pürüzsüz değildir. Sanatçı da yaşadığı
-            çağdan bağımsız ve ayrıksı düşünülemez. Savaşlar, soykırımlar ve ne
-            varsa yüzyıla dair hepsi bir bütün olarak yaşanır . Hele bir de son
-            sürat devleşen teknolajinin dışında olmaya çalışmak, istesekte
-            yapacağımız bir şey değildir artık. Bütün bunlar yaşanırken dört bir
-            köşesinde evrenimizin, huzurlu bir gökyüzü altında uzanamazsınız. Ya
-            da bir sanatçının uzanmasını bekleyemezsiniz. Varsayalım ki o göğün
-            altında uzanıyormuş gibi yapıyorsunuz, neredeyse her şey kendi
-            ahenginde akıyormuş gibi... Sebebini bilmediğiniz , bir türlü
-            anlayamadığınız kasılmalarınız , baş ağrılarınız,
-            anlamlandıramadığınız tikleriniz, kaygılarınız başlar ve bu liste
-            böyece uzar gider.
+            İşte tam da o anlarda sebebini bilmediğiniz, anlayamadığınız
+            kasılmalarınız, baş ağrılarınız, tikleriniz başlar...
           </p>
           <p>
-            Siz, coğrafyanızın size dayattığı öğrenmişliğin dışına ne kadar
-            istesenizde çıkamazsınız. Elbette dener, farkındalığınızı
-            yükseltmeye çalışırsınız. Ama tüm bu deneyimler ışığında kendinizi,
-            otellerde eşantiyon olarak verilen bir sıkımlık dişmacunu değerinde
-            görmeye başlarsınız.
-          </p>
-
-          <p>
-            Ve hiç bir şey öylesine gelip geçmez yanınızdan. Bir varsınız, bir
-            yoksunuz. Ama insana ait yaşanmışlıklarımız yanıbaşımızda
-            genetiğimize işleyerek büyür.
+            Öğrendiklerinizin dışına çıkmaya çalışsanız da yok çıkamazsınız. Ve
+            kendinizi bir otel odasında eşantiyon olarak verilen tek sıkımlık
+            diş macunu kıvamında değersizleştirirken hiç bir şey öylesine gelip
+            geçmez yanınızdan. Size dokunur ve bu dokunuşlar yaşanmışlıklar
+            olarak genetiğinize işleyerek büyür.
           </p>
         </div>
         <div className='thesis-image-slider'>

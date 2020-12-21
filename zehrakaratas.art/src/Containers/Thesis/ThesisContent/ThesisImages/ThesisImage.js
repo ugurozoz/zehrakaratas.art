@@ -23,8 +23,8 @@ class ThesisImage extends React.Component {
           src={this.props.imageUrl}
           onLoad={this.handleImageLoaded}
           onError={this.handleImageErrored}
+          style={this.state.loaded ? { display: 'block' } : { display: 'none' }}
         />
-        
       </div>
     );
   }

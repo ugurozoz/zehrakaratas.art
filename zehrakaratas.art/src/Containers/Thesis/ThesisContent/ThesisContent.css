@@ -5,6 +5,7 @@
 .thesis-container__inner {
   display: flex;
   flex-direction: column-reverse;
+  
 }
 
 @media only screen and (min-width: 1024px) {
@@ -22,6 +23,7 @@
 
 .thesis-image-slider{
   overflow: hidden;
+  position: relative;
 }
 
 @media only screen and (min-width: 1024px) {
