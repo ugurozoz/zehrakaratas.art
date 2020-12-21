@@ -4,7 +4,6 @@ import NavigationLink from './Link/Link';
 import './Links.css';
 
 const navigationLinks = (props) => {
-  console.log('LINKS RENDERED');
 
   return (
     <div className='NavMenu'>
@@ -19,9 +18,10 @@ const navigationLinks = (props) => {
             <NavigationLink exact link='/'>
               Anasayfa
             </NavigationLink>
-            <NavigationLink link='/cv'>CV</NavigationLink>
+            
             <NavigationLink link='/thesis'>Tez</NavigationLink>
             <NavigationLink link='/sketch'>Eskiz</NavigationLink>
+            <NavigationLink link='/cv'>CV</NavigationLink>
             <NavigationLink link='/contact'>İletişim</NavigationLink>
           </ul>
         </nav>

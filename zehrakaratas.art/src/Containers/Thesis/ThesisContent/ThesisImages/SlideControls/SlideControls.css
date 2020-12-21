@@ -1,0 +1,37 @@
+.slide-controls {
+  position: absolute;
+  bottom: 50%;
+  left: 2%;
+  z-index: 200;
+  text-align: center;
+  transition: left 0.3s ease-in;
+  width: 96%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.slide-controls span {
+  display: block;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transform: rotate(135deg);
+}
+
+.slide-controls span:first-child{
+  transform: rotate(-45deg);
+
+}
+
+.slide-controls span:after {
+  content: '';
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  border: 5px solid #fff;
+  top: 0px;
+  left:0px;
+  
+}

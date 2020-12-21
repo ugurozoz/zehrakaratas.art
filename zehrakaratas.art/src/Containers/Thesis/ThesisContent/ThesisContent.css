@@ -24,15 +24,19 @@
 .thesis-image-slider{
   overflow: hidden;
   position: relative;
+  height:calc( (100vw - 60px) * 1.568 );
 }
 
 @media only screen and (min-width: 1024px) {
   .thesis-text {
     width:calc( 60% - 10px );
+    min-height: 620px;
+    
   }
 
   .thesis-image-slider {
     width:calc( 40% - 10px );
+    height:auto;
   }
 
 

@@ -7,7 +7,7 @@ class ThesisImage extends React.Component {
   state = { imageStatus: 'loading', loaded: false };
 
   handleImageLoaded = () => {
-    console.log('IMAGE LOADED');
+    
     this.setState({ imageStatus: 'loaded', loaded: true });
   };
 
@@ -20,6 +20,7 @@ class ThesisImage extends React.Component {
       <div className='thesis-image'>
         {!this.state.loaded ? <Spinner /> : null}
         <img
+          alt=""
           src={this.props.imageUrl}
           onLoad={this.handleImageLoaded}
           onError={this.handleImageErrored}

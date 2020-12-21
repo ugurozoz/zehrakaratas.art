@@ -4,18 +4,3 @@
   transition: left .3s ease-in;
 }
 
-.slide-controls{
-  position: absolute;
-  bottom: -30px;
-  left: 0px;
-  z-index: 200;
-  text-align: center;
-  transition: left .3s ease-in;
-
-
-}
-
-.slide-controls span {
-  padding: 0 20px;
-  cursor: pointer;
-}

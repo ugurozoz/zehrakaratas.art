@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Switch, Route, withRouter, Redirect } from 'react-router-dom';
+import { Route, withRouter } from 'react-router-dom';
 import Layout from './hoc/Layout/Layout';
 import Aux from './hoc/Auxiliary/Auxiliary';
 
@@ -33,7 +33,7 @@ class App extends Component {
     //   </Switch>
     // );
 
-    // console.log(routes);
+    
 
     return (
       <Aux>

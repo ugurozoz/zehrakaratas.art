@@ -5,7 +5,6 @@ import NameTitle from './NameTitle/NameTitle';
 import './Header.css';
 
 const header = (props) => {
-  console.log('HEADER RENDERED');
 
   return (
     <header>

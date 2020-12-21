@@ -1,0 +1,12 @@
+.contact-container .edu-div-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.contact-container .gen-head{
+  margin-bottom: 30px;
+}
+
+
+.contact-container p{ margin-bottom: 10px;}

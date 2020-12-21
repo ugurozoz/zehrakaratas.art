@@ -2,7 +2,7 @@ import React from 'react';
 import './SketchThumbs.css';
 
 const sketchThumbs = (props) => {
-  console.log('RENDER THUMBS')
+  
 
   
   return (

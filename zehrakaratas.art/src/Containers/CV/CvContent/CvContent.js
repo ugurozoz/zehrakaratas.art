@@ -6,6 +6,16 @@ const cvContent = (props) => {
     <div className='container cv-container'>
       <div className='st-con edu-div'>
         <strong className='gen-head'>Eğitim</strong>
+
+        <div className='edu-div-row'>
+          <strong>Üniversite</strong>
+          <span>:</span>
+          <p>
+            Univerzitet 'Sv. Kiril i Metódij' vo Skopje, Master's degree,
+            Sculpture(2017)
+          </p>
+        </div>
+
         <div className='edu-div-row'>
           <strong>Üniversite</strong>
           <span>:</span>
