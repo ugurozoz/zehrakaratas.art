@@ -22,18 +22,7 @@ const routes = [
 ];
 class App extends Component {
   render() {
-    // const routes = (
-    //   <Switch>
-    //     <Route path='/contact' component={Contact} />
-    //     <Route path='/sketch' component={Sketch} />
-    //     <Route path='/thesis' component={Thesis} />
-    //     <Route path='/cv' component={Cv} />
-    //     <Route path='/' exact component={Home} />
-    //     <Redirect to='/' />
-    //   </Switch>
-    // );
-
-    
+        
 
     return (
       <Aux>
