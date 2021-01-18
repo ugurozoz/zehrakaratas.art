@@ -40,6 +40,38 @@ const cvContent = (props) => {
 
       <div className='st-con job-div'>
         <strong className='gen-head'>İş Deneyimleri</strong>
+
+        <div className='job-div-row'>
+          <strong>Empowerment of Women and Women NGOs Project</strong>
+          <p>
+          Uygulayıcı kuruluş: <br/>
+Mardin Kadın Eğitim ve İstihdam Destekleme Derneği <br/>
+07.02.2017 - Hediyelik Eşya Üretimi Eğitimi (3 aylık proje)
+          </p>
+          <p>Birim: Usta eğitmen</p>
+        </div>
+
+
+        <div className='job-div-row'>
+          <strong>
+           Bağımsız kendi atölyesinde çalıştı - 2013
+          </strong>
+          
+        </div>
+
+        <div className='job-div-row'>
+          <strong>Empowerment of Women and Women NGOs Project</strong>
+          <p>
+          Uygulayıcı kuruluş: <br/>
+Mardin Kadın Eğitim ve İstihdam Destekleme Derneği <br/>
+08.11.2012 - Hediyelik Eşya Üretimi Eğitimi (3 aylık proje)
+          </p>
+          <p>Birim: Usta eğitmen</p>
+        </div>
+
+
+        
+
         <div className='job-div-row'>
           <strong>
             VII SANAT SERAMİK HEYKEL CAM TASARIM ATOLYESİ; İSTANBUL (09.04.2007
